@@ -27,9 +27,7 @@ class PACKET {
 
     uint32_t pf_metadata;
 
-    uint8_t  is_producer = 0, 
-             asid[2] = {std::numeric_limits<uint8_t>::max(), std::numeric_limits<uint8_t>::max()},
-             type = 0;
+    uint8_t  is_producer = 0;
 
     std::list<std::vector<LSQ_ENTRY>::iterator> lq_index_depend_on_me = {};
     std::list<std::vector<LSQ_ENTRY>::iterator> sq_index_depend_on_me = {};
